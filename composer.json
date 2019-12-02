@@ -1,0 +1,57 @@
+{
+    "name": "wapluginlab/php-lib",
+    "description": "WAPLUGIN PHP library",
+    "keywords": [
+        "waplugin",
+        "api",
+        "whatsapp"
+    ],
+    "homepage": "https://github.com/wapluginlab/php-lib",
+    "authors": [
+    {
+        "name": "wapluginlab",
+        "email": "waplugin@gmail.com"
+    }],
+    "require":
+    {
+        "php": "^7.1",
+        "ext-curl": "*"
+    },
+    "require-dev":
+    {
+        "phpunit/phpunit": "^7.0",
+        "vlucas/phpdotenv": "^3.6"
+    },
+    "autoload":
+    {
+        "psr-4":
+        {
+            "Waplugin\\": "src"
+        }
+    },
+    "autoload-dev":
+    {
+        "psr-4":
+        {
+            "Waplugin\\Tests\\": "tests"
+        }
+    },
+    "scripts":
+    {
+        "test": [
+            "phpunit",
+            "phpcs"
+        ]
+    },
+    "extra":
+    {
+        "branch-alias":
+        {
+            "dev-master": "1.0-dev"
+        }
+    },
+    "config":
+    {
+        "sort-packages": true
+    }
+}

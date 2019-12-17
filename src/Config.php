@@ -6,8 +6,7 @@ class Config
 {
     public static $secretKey;
 
-    // const PRODUCTION_BASE_URL = 'https://waplugin.com/api';
-    const PRODUCTION_BASE_URL = 'http://localhost:8000/api';
+    const PRODUCTION_BASE_URL = 'https://waplugin.com/api';
 
     /**
      * Get baseUrl

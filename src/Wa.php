@@ -23,7 +23,7 @@ class Wa
      * @return array
      * @throws Exception curl error
      */
-    public function getStatus($account_id)
+    public static function getStatus($account_id)
     {
         $result = ApiRequestor::get(
             Config::getBaseUrl() . '/wa/is-connected/'.$account_id,
@@ -53,7 +53,7 @@ class Wa
      * @return array
      * @throws Exception curl error
      */
-    public function sendMessage($account_id, $params)
+    public static function sendMessage($account_id, $params)
     {
         $result = ApiRequestor::post(
             Config::getBaseUrl() . '/wa/send-message/'.$account_id,

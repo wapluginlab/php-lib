@@ -23,7 +23,7 @@ class Account
      * @return array
      * @throws Exception curl error
      */
-    public function getIndex($params)
+    public static function getIndex($params)
     {
         $url = Config::getBaseUrl() . '/account';
         if ($params) {
@@ -58,7 +58,7 @@ class Account
      * @return array
      * @throws Exception curl error
      */
-    public function showAccount($id)
+    public static function showAccount($id)
     {
         $result = ApiRequestor::get(
             Config::getBaseUrl() . '/account/'.$id,
